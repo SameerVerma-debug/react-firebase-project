@@ -1,8 +1,8 @@
-import './App.css';
+import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Main } from './pages/Main';
-import { Login } from './pages/Login';
+import { Main } from './pages/home';
 import { Navbar } from './components/Navbar';
+import { CreatePost } from './create-post/create-post';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Main/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route path='/createpost' element={<CreatePost/>}/>
         </Routes>
       </Router>
     </div>
