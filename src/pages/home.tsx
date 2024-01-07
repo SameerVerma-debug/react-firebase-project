@@ -26,6 +26,7 @@ export const Main = () => {
     getPosts();
   }, []);
 
+
   return (
     <div className="posts-container-wrapper">
       <h1>Home Page</h1>
